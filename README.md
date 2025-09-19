@@ -1,0 +1,1 @@
+# Auto-Hotkey-Script-Manager
