@@ -20,3 +20,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - name: Create executable with Pyinstaller
+        run: |
+          pyinstaller --onefile --add-data "assets;assets" window.py
+        shell: bash
+      - name: Upload executable as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AHKManager
+          path: dist/window.exe
