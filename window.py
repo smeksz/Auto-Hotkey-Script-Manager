@@ -416,7 +416,7 @@ def settings_window():
         ttk.Label(settings_window, text="Make sure this is the correct path to Auto Hotkey or else the program \nwill not be able to restart or launch any scripts", font='Calibri 14', justify=tk.CENTER).pack()
         madeby_label = ttk.Label(settings_window, text="Made by smeks", foreground="#dff9ff", font='Calibri 13', justify=tk.CENTER)
         madeby_label.pack(pady=(270,0))
-        madeby_label.bind("<Button-1>", lambda e: open_url("https://www.google.com"))
+        madeby_label.bind("<Button-1>", lambda e: print(""))
 
 def open_url(url):
     webbrowser.open_new(url)
