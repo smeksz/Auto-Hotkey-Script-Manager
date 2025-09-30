@@ -1,5 +1,4 @@
-import ahk, psutil
-ahk = ahk.AHK()
+import psutil
 ahk_scripts = None
 
 # get running scripts
