@@ -278,7 +278,7 @@ def ahk_scripts_tk(ahk_scripts_func):
 
 # window & style
 window = ttk.Window(resizable=(False, False))
-ttk.Style().load_user_themes("ttkb_themes.json")
+ttk.Style().load_user_themes(resource_path("ttkb_themes.json"))
 ttk.Style().theme_use("ahk")
 window.title("Auto Hotkey Scripts Manager")
 window.geometry('960x800')
