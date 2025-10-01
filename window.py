@@ -265,7 +265,7 @@ def ahk_scripts_tk(ahk_scripts_func):
                     all_scripts[x][y].grid(row=0, column=2, sticky="w", padx=10, pady=0)
                     ToolTip.CreateToolTip(all_scripts[x][y], text = "Restart script")
                 case 4: # Kill script button
-                    all_scripts[x][y].grid(row=0, column=3, sticky="w", padx=10, pady=0)
+                    all_scripts[x][y].grid(row=0, column=3, sticky="w", padx=10, pady=0)    
                     ToolTip.CreateToolTip(all_scripts[x][y], text = "Kill script")
 
 
@@ -276,8 +276,10 @@ def ahk_scripts_tk(ahk_scripts_func):
         individual_script_frames = all_scripts_frames
     return
 
-# window
-window = ttk.Window(themename='ahk', resizable=(False, False))
+# window & style
+window = ttk.Window(resizable=(False, False))
+ttk.Style().load_user_themes("ttkb_themes.json")
+ttk.Style().theme_use("ahk")
 window.title("Auto Hotkey Scripts Manager")
 window.geometry('960x800')
 # icon
